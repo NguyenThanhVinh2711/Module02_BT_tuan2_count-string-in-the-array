@@ -2,19 +2,19 @@ import java.util.Scanner;
 
 public class main {
     public static void main(String[] args) {
-        String s ;
+        String string ;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nhap noi dung cho chuoi : ");
-        s = scanner.nextLine();
+        string = scanner.nextLine();
         System.out.println("Nhap ky tu : ");
-        char c;
-        c = scanner.next().charAt(0);
+        char kytu;
+        kytu = scanner.next().charAt(0);
         int count = 0;
-        for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) ==c){
+        for (int i = 0; i < string.length(); i++) {
+            if (string.charAt(i) == kytu){
                 count++;
             }
         }
-        System.out.println("So lan xuat hien cua : " + c + " la " + count );
+        System.out.println("So lan xuat hien cua : " + kytu + " la " + count );
     }
 }
